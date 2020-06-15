@@ -5,6 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainBoardComponent } from './main-board/main-board.component';
 import { NavComponent } from './nav/nav.component';
+import { Routes, RouterModule } from '@angular/router';
+
+const routes: Routes = [
+  { path: 'boards', component: MainBoardComponent },
+];
 
 @NgModule({
   declarations: [
@@ -14,8 +19,9 @@ import { NavComponent } from './nav/nav.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    RouterModule.forRoot(routes),
   ],
+  exports: [RouterModule],
   providers: [],
   bootstrap: [AppComponent]
 })
