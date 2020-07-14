@@ -1,7 +1,38 @@
 <div class="container">
+    <div class="menu">
+        <div class="menu__item" [routerLink]="['/boards']" routerLinkActive="active">
+            <span class="menu__item_icon">
+                <i class="fa fa-trello"></i>
+            </span>
+            <span>
+                Boards
+            </span>
+        </div>
+        <div class="menu__item">
+            <span class="menu__item_icon">
+                <i class="fa fa-tasks"></i>
+            </span>
+            <span>
+                Templates
+            </span>
+        </div>
+        <div class="menu__item">
+            <span class="menu__item_icon">
+                <i class="fa fa-bolt"></i>
+            </span>
+            <span>
+                Main page
+            </span>
+        </div>
+    </div>
     <div class="container__desks">
         <div class="title">
             <i class="fa fa-user"></i> Personal desk list
+        </div>
+        <div class="container__wrapper">
+            <div class="container__desks_card">
+                <span>Create new desk</span>
+            </div>
         </div>
     </div>
 </div>

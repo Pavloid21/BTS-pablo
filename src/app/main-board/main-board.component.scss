@@ -1,8 +1,64 @@
 .container {
     padding: 20px 20px;
+    display: flex;
+    align-items: baseline;
 }
 
 .title {
     font-size: larger;
     font-weight: bold;
+}
+
+.container__wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.container__desks {
+    margin-left: 40px;
+}
+
+.container__desks_card {
+    width: 193px;
+    height: 96px;
+    background-color: rgba(9,30,66,.04);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #172b4d;
+    &:hover {
+        background-color: rgba(9,30,66,.08);
+        cursor: pointer;
+    }
+    &:active {
+        background-color: #e4f0f6;
+        color: #0079bf;
+    }
+}
+
+.menu {
+    width: 240px;
+    &__item {
+        margin-bottom: 4px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        border-radius: 4px;
+        font-weight: 700;
+        &:hover {
+            cursor: pointer;
+            background-color: rgba(9,30,66,.08);
+        }
+        &_icon{
+            display: block;
+            flex: 0 0 auto;
+            text-align: center;
+            width: 32px;
+        }
+        &.active {
+            background-color: #c70039;
+            color: #FFF;
+        }
+    }
 }
